@@ -3,9 +3,7 @@ for (let i = 0; i < 16; i++) {
         const grid = document.querySelector(".sketchpad");
         const block = document.createElement("div");
 
-        block.style.border = "1px solid gray";
-        block.style.height = "10px";
-        block.style.width = "10px";
+        block.classList.add("grid-block");
 
         grid.appendChild(block);
     }
