@@ -11,8 +11,20 @@
 }
 
 body {
+    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #062F4F;
+}
+
+.header {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: rgb(226, 226, 226);
+}
+
+.header h1 {
+    margin: 0px;
+    padding: 20px;
 }
