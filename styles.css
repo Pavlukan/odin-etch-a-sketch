@@ -1,7 +1,17 @@
+body {
+    height: 100vh;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #062F4F;
+}
+
 .sketchpad {
     width: 200px;
     display: flex;
     flex-flow: row wrap;
+    margin-bottom: auto;
 }
 
 .grid-block {
@@ -10,13 +20,6 @@
     border: 1px solid grey;
 }
 
-body {
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #062F4F;
-}
 
 .header {
     font-family:'Courier New', Courier, monospace;
@@ -28,3 +31,16 @@ body {
     margin: 0px;
     padding: 20px;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    color:rgb(226, 226, 226);
+    background-color:#03192b;
+}
+
+
