@@ -14,10 +14,15 @@ for (let i = 0; i < 16; i++) {
 
 // This code snippet creates the hover effect for every block.
 let gridItems = document.querySelectorAll(".grid-block");
-for (let k = 0; k < gridItems.length; k++) { 
-    gridItems[k].addEventListener("mouseenter", () => { 
-        gridItems[k].style.backgroundColor = "red"
-    });
+addHoverEffect();
+
+// This is the function which actually creates the hover effect
+function addHoverEffect() {
+    for(let k = 0; k < gridItems.length; k++) {
+        gridItems[k].addEventListener("mouseenter", () => { 
+            gridItems[k].style.backgroundColor = "red"
+        });
+    }
 }
 
 // Make the function run when we click on the button
@@ -44,13 +49,9 @@ function selectGridSize() {
                 block.classList.add("grid-block");
                 grid.appendChild(block);
                 gridItems = document.querySelectorAll(".grid-block");
-                for (let k = 0; k < gridItems.length; k++) { 
-                    gridItems[k].addEventListener("mouseenter", () => { 
-                        gridItems[k].style.backgroundColor = "red"
-                    });
+                addHoverEffect();
                 }
             }
         }
     }
-}
 
