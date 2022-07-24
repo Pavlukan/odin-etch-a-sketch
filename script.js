@@ -36,8 +36,8 @@ function selectGridSize() {
     if (gridSize > 100) {
         return alert("Please enter a smaller number and try again");
     } else {
-        blockSize = 600 / gridSize;
-        for (gridItem of gridItems) { // remove every block from gridItems
+        let blockSize = 600 / gridSize;
+        for (gridItem of gridItems) {
             gridItem.remove();
         }
 
