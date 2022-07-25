@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #062F4F;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .sketchpad {
@@ -42,6 +43,18 @@ body {
     font-size: 18px;
     color:rgb(226, 226, 226);
     background-color:#03192b;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+button {
+    margin-top: 15px;
+    color:rgb(226, 226, 226);
+    font-size: 18px;
+    background-color: #062F4F;
+    padding: 18px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 2px 2px 6px 2px black;
 }
 
 
