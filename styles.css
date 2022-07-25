@@ -67,5 +67,10 @@ a:hover {
     color:rgb(128, 128, 128);
 }
 
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
 
 
