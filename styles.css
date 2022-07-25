@@ -8,6 +8,16 @@ body {
     font-family:'Courier New', Courier, monospace;
 }
 
+.main {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.color-pallette {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
 .sketchpad {
     margin: 40px;
     box-shadow: 10px 10px 15px 15px;
@@ -17,7 +27,6 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: auto;
 }
 
 .header {
@@ -35,6 +44,7 @@ body {
 }
 
 .footer {
+    margin-top: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +88,15 @@ a:hover {
 .buttons {
     display: flex;
     gap: 20px;
+}
+
+.color-pallete {
+}
+
+img {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
 }
 
 
