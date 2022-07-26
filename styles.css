@@ -38,6 +38,10 @@ button {
     width: 50px;
 }
 
+.tools button:hover {
+    background-color:#ffffff
+}
+
 #white {
     background-color:#ffffff;
 }
