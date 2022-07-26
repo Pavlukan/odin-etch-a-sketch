@@ -16,6 +16,8 @@ body {
 .color-pallette {
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .sketchpad {
@@ -56,7 +58,7 @@ body {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-button {
+.buttons button {
     width: 240px;
     margin-top: 15px;
     color:rgb(226, 226, 226);
@@ -88,15 +90,6 @@ a:hover {
 .buttons {
     display: flex;
     gap: 20px;
-}
-
-.color-pallete {
-}
-
-img {
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
 }
 
 
