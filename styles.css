@@ -25,6 +25,7 @@ body {
     width: 45px;
     border: none;
     border-radius: 50%;
+    box-shadow: 4px 2px 12px 2px black;
 }
 
 #white {
