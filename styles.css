@@ -13,7 +13,7 @@ body {
     flex-flow: row nowrap;
 }
 
-.color-pallette {
+.color-pallette, .tools {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -24,7 +24,7 @@ button {
     cursor: pointer;
 }
 
-.color-pallette button {
+.color-pallette button, .tools button {
     height: 45px;
     width: 45px;
     border: none;
@@ -33,7 +33,7 @@ button {
     transition: 0.23s;
 }
 
-.color-pallette button:hover {
+.color-pallette button:hover, .tools button:hover {
     height: 50px;
     width: 50px;
 }
