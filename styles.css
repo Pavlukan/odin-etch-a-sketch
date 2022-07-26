@@ -30,6 +30,12 @@ button {
     border: none;
     border-radius: 50%;
     box-shadow: 4px 2px 12px 2px black;
+    transition: 0.23s;
+}
+
+.color-pallette button:hover {
+    height: 50px;
+    width: 50px;
 }
 
 #white {
