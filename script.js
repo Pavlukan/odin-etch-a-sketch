@@ -1,5 +1,5 @@
 const grid = document.querySelector(".sketchpad"); 
-let color = "red";
+let color = "white";
 
 const whiteBtn = document.querySelector("#white");
 const blackBtn = document.querySelector("#black");
@@ -10,6 +10,8 @@ const redBtn = document.querySelector("#red");
 const orangeBtn = document.querySelector("#orange");
 const greenBtn = document.querySelector("#green");
 const yellowBtn = document.querySelector("#yellow");
+
+const eraserBtn = document.querySelector("#eraser")
 
 // The loop below creates 16x16 grid.
 for (let i = 0; i < 16; i++) {
@@ -78,6 +80,11 @@ greenBtn.addEventListener("click", () => {
 
 yellowBtn.addEventListener("click", () => {
     color = "#ffff00";
+    addHoverEffect();
+});
+
+eraserBtn.addEventListener("click", () => {
+    color = "";
     addHoverEffect();
 });
 
