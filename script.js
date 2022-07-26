@@ -1,4 +1,15 @@
 const grid = document.querySelector(".sketchpad"); 
+let color = "white";
+
+const whiteBtn = document.querySelector("#white");
+const blackBtn = document.querySelector("#black");
+const brownBtn = document.querySelector("#brown");
+const purpleBtn = document.querySelector("#purple");
+const pinkBtn = document.querySelector("#pink");
+const redBtn = document.querySelector("#red");
+const orangeBtn = document.querySelector("#orange");
+const greenBtn = document.querySelector("#green");
+const yellowBtn = document.querySelector("#yellow");
 
 // The loop below creates 16x16 grid.
 for (let i = 0; i < 16; i++) {
@@ -12,18 +23,18 @@ for (let i = 0; i < 16; i++) {
     }
 }
 
-// This code snippet creates the hover effect for every block.
-let gridItems = document.querySelectorAll(".grid-block");
-addHoverEffect();
-
 // This is the function which actually creates the hover effect
 function addHoverEffect() {
     for(let k = 0; k < gridItems.length; k++) {
         gridItems[k].addEventListener("mouseenter", () => { 
-            gridItems[k].style.backgroundColor = "red"
+            gridItems[k].style.backgroundColor = color;
         });
     }
 }
+
+// This code snippet creates the hover effect for every block.
+let gridItems = document.querySelectorAll(".grid-block");
+addHoverEffect();
 
 // Make the function run when we click on the button
 const button = document.querySelector(".grid-size");
