@@ -1,5 +1,5 @@
 const grid = document.querySelector(".sketchpad"); 
-let color = "white";
+let color = "red";
 
 const whiteBtn = document.querySelector("#white");
 const blackBtn = document.querySelector("#black");
@@ -36,9 +36,54 @@ function addHoverEffect() {
 let gridItems = document.querySelectorAll(".grid-block");
 addHoverEffect();
 
+whiteBtn.addEventListener("click", () => {
+    color = "#ffffff";
+    addHoverEffect();
+});
+
+blackBtn.addEventListener("click", () => {
+    color = "#000000";
+    addHoverEffect();
+});
+
+brownBtn.addEventListener("click", () => {
+    color = "#a52a2a";
+    addHoverEffect();
+});
+
+purpleBtn.addEventListener("click", () => {
+    color = "#800080";
+    addHoverEffect();
+});
+
+pinkBtn.addEventListener("click", () => {
+    color = "#d87093";
+    addHoverEffect();
+});
+
+redBtn.addEventListener("click", () => {
+    color = "#ff0000";
+    addHoverEffect();
+});
+
+orangeBtn.addEventListener("click", () => {
+    color = "#ff4500";
+    addHoverEffect();
+});
+
+greenBtn.addEventListener("click", () => {
+    color = "#008000";
+    addHoverEffect();
+});
+
+yellowBtn.addEventListener("click", () => {
+    color = "#ffff00";
+    addHoverEffect();
+});
+
 // Make the function run when we click on the button
-const button = document.querySelector(".grid-size");
-button.addEventListener("click", selectGridSize); 
+const gridButton = document.querySelector(".grid-size");
+gridButton.addEventListener("click", selectGridSize); 
 
 // This function prompts the user to input grid size and creates a new grid, depending on the user's input
 function selectGridSize() {
@@ -68,7 +113,7 @@ function selectGridSize() {
 
 // Make the function toggleRainbow run when we click on the button
 const rainbowButton = document.querySelector(".rainbow");
-rainbowButton = addEventListener("click", toggleRainbow);
+rainbowButton.addEventListener("click", toggleRainbow);
 
 // The function which adds hover effect for every block.
 function toggleRainbow() {
