@@ -27,6 +27,42 @@ body {
     border-radius: 50%;
 }
 
+#white {
+    background-color:#ffffff;
+}
+
+#black {
+    background-color:#000000;
+}
+
+#brown {
+    background-color:#a52a2a;
+}
+
+#purple {
+    background-color:#800080;
+}
+
+#pink {
+    background-color:#d87093;
+}
+
+#red {
+    background-color:#ff0000;
+}
+
+#orange {
+    background-color:#ff4500;
+}
+
+#green {
+    background-color:#008000;
+}
+
+#yellow {
+    background-color:#ffff00;
+}
+
 .sketchpad {
     margin: 40px;
     box-shadow: 10px 10px 15px 15px;
@@ -44,7 +80,7 @@ body {
     background-color: #03192be1;
     font-family:'Courier New', Courier, monospace;
     font-size: 30px;
-    color: rgb(226, 226, 226);
+    color: #e2e2e2;
 }
 
 .header h1 {
@@ -60,7 +96,7 @@ body {
     height: 50px;
     width: 100%;
     font-size: 18px;
-    color:rgb(226, 226, 226);
+    color:#e2e2e2;
     background-color:#03192b;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -68,7 +104,7 @@ body {
 .buttons button {
     width: 240px;
     margin-top: 15px;
-    color:rgb(226, 226, 226);
+    color:#e2e2e2;
     font-size: 18px;
     background-color: #062F4F;
     padding: 18px;
@@ -79,7 +115,7 @@ body {
 }
 
 button:hover {
-    color: rgb(226, 226, 226);
+    color: #e2e2e2;
     background-color:#1f75b8;
 }
 
@@ -87,11 +123,11 @@ button:hover {
 a {
     text-decoration: none;
     padding-left: 5px;
-    color:rgb(226, 226, 226);
+    color:#e2e2e2;
 }
 
 a:hover {
-    color:rgb(128, 128, 128);
+    color:#808080;
 }
 
 .buttons {
