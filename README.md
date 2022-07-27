@@ -12,3 +12,4 @@ You can also change the size of the grid to be 32x32 or 48x48 by clicking the bu
 
 If you are bored, you can turn on the rainbow mode using the appropriate button. 
 
+Live preview: https://pavlukan.github.io/odin-etch-a-sketch/
