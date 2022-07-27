@@ -23,6 +23,7 @@ body {
 
 button {
     cursor: pointer;
+    font-weight: bold;
 }
 
 .color-pallette button, .tools button {
