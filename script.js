@@ -1,6 +1,9 @@
 const grid = document.querySelector(".sketchpad"); 
 let color = "white"; // The default color of the pen
 
+const rainbowBtn = document.querySelector(".rainbow");
+const gridBtn = document.querySelector(".grid-size");
+
 const whiteBtn = document.querySelector("#white");
 const blackBtn = document.querySelector("#black");
 const brownBtn = document.querySelector("#brown");
@@ -40,6 +43,24 @@ function clearGrid() {
     for(let k = 0; k < gridItems.length; k++) {
             gridItems[k].style.backgroundColor = "";
         }    
+}
+
+// The function which returns us a random bright color
+function randomColor() {
+    randomNumber = Math.floor((Math.random() * 6) + 1); 
+    if (randomNumber === 1) {
+        return "#0066CC";
+    } else if (randomNumber === 2) {
+        return "#FF00CC";
+    } else if (randomNumber === 3) {
+        return "#33CC99";
+    } else if (randomNumber === 4) {
+        return "#C46210";
+    } else if (randomNumber === 5) {
+        return "#FD0E35";
+    } else {
+        return "#FFFF38";
+    }
 }
 
 // This code snippet creates the hover effect for every block.
@@ -99,8 +120,7 @@ eraserBtn.addEventListener("click", () => {
 clearBtn.addEventListener("click", clearGrid);
 
 // Make the function run when we click on the button
-const gridButton = document.querySelector(".grid-size");
-gridButton.addEventListener("click", selectGridSize); 
+gridBtn.addEventListener("click", selectGridSize); 
 
 // This function prompts the user to input grid size and creates a new grid, depending on the user's input
 function selectGridSize() {
@@ -129,8 +149,7 @@ function selectGridSize() {
     }
 
 // Make the function toggleRainbow run when we click on the button
-const rainbowButton = document.querySelector(".rainbow");
-rainbowButton.addEventListener("click", toggleRainbow);
+rainbowBtn.addEventListener("click", toggleRainbow);
 
 // The function which adds hover effect for every block.
 function toggleRainbow() {
@@ -141,20 +160,3 @@ function toggleRainbow() {
     }
 }
 
-// The function which returns us a random bright color
-function randomColor() {
-    randomNumber = Math.floor((Math.random() * 6) + 1); 
-    if (randomNumber === 1) {
-        return "#0066CC";
-    } else if (randomNumber === 2) {
-        return "#FF00CC";
-    } else if (randomNumber === 3) {
-        return "#33CC99";
-    } else if (randomNumber === 4) {
-        return "#C46210";
-    } else if (randomNumber === 5) {
-        return "#FD0E35";
-    } else {
-        return "#FFFF38";
-    }
-}
