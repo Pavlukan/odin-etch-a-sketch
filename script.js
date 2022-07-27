@@ -1,5 +1,5 @@
 const grid = document.querySelector(".sketchpad"); 
-let color = "white";
+let color = "white"; // The default color of the pen
 
 const whiteBtn = document.querySelector("#white");
 const blackBtn = document.querySelector("#black");
@@ -12,6 +12,7 @@ const greenBtn = document.querySelector("#green");
 const yellowBtn = document.querySelector("#yellow");
 
 const eraserBtn = document.querySelector("#eraser")
+const clearBtn = document.querySelector("#clear");
 
 // The loop below creates 16x16 grid.
 for (let i = 0; i < 16; i++) {
@@ -32,6 +33,13 @@ function addHoverEffect() {
             gridItems[k].style.backgroundColor = color;
         });
     }
+}
+
+// This function clears the grid
+function clearGrid() {
+    for(let k = 0; k < gridItems.length; k++) {
+            gridItems[k].style.backgroundColor = "";
+        }    
 }
 
 // This code snippet creates the hover effect for every block.
@@ -87,6 +95,8 @@ eraserBtn.addEventListener("click", () => {
     color = "";
     addHoverEffect();
 });
+
+clearBtn.addEventListener("click", clearGrid);
 
 // Make the function run when we click on the button
 const gridButton = document.querySelector(".grid-size");
